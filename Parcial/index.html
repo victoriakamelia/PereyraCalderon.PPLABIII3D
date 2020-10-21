@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script type="module" src="./js/index.js"></script>
+  <script type="module" src="./js/Anuncio.js"></script>
+  <script type="module" src="./js/Anuncio_Auto.js"></script>
+  <script type="module" src="./js/gestionTablas.js"></script>
+
+  <title>Inicio</title>
+</head>
+
+<body class="page1" id="top">
+  <header>
+    <h1>
+      <a href="index.html">
+        Pisteando
+        <span>Como un campeón</span>
+        
+      </a>
+    </h1>
+
+    <div class="clear"></div>
+
+    <section id="content">
+      <div class="to__center">
+        <div>
+          <h2>Administracion</h2>
+          <p>Seleccione una acción</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="content">
+      <div class="to__center">
+        <fieldset>
+          <button id="btnAlta">Alta</button>
+          <button id="btnBaja">Baja</button>
+          <button id="btnModificar">Modificar</button>
+          <button id="btnListar">Listar</button>
+        </fieldset>
+        <br><br>
+      </div>
+    </Section>
+
+    <section id="content">
+      <div class="to__center">
+        <form id="form-principal">
+          <fieldset>
+            <label for="txtId">ID: <input type="text" name="txtId" id="txtId" disabled=true> </label>
+            <label for="txtTitulo">Titulo: <input type="text" name="txtTitulo" id="txtTitulo" disabled=false required placeholder="Titulo"> </label>
+            <br><br>
+            <label for="txtTran">Transacción
+              <input type="radio" name="transaccion" id="txtTranVenta" value="venta" checked >Venta
+              <input type="radio" name="transaccion" id="txtTranAlquiler" value="alquiler" >Alquiler</label>
+            <br><br>
+            <label for="txtDescripcion">Descripción: <input type="text" name="descripcion" id="txtDescripcion" disabled=false
+                required required placeholder="Descripción"></label>
+                <br><br>
+            <label for="txtPrecio">Precio: <input type="text" name="precio" id="txtPrecio" disabled=false
+                required placeholder="Precio"></label>
+            <br><br>
+            <label>Puertas: <input type="text" name="puertas" id="txtPuertas" disable= true required placeholder="Puertas"></label>
+            <label>KMS: <input type="text" name="KMS" id="txtKMS" disable= true required placeholder="KMS"></label>
+            <label>Potencia: <input type="text" name="potencia" id="txtPotencia" disable= true required placeholder="Potencia"></label>
+            <br><br>
+            <button id="btnEnviar" disabled=true>Guardar</button>
+            <button id="btnLimpiarCampos">Limpiar Campos</button>
+            <br>
+          </fieldset>
+        </form>
+    </section>
+
+    <div id="divTabla" class="to__center"></div>
+
+    <footer id="footer">
+      <h1>
+        <a href="index.html">
+          ____________
+        </a>
+    </footer>
+    <a href="#" id="toTop"></a>
+</body>
+
+</html>
